@@ -4,7 +4,7 @@ all: sum-test
 sum-test: main.o sum.o
 	g++ -o sum-test main.o sum.o
 
-main.o: sum.h main.cpp
+main.o: sum.o main.cpp
 	g++ -c -o main.o main.cpp
 
 sum.o: sum.h sum.cpp
